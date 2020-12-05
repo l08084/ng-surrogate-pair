@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-surrogate-pair';
+  count = 0;
+  count2 = 0;
+  constructor() {
+    this.count2 = 'ABC'.length; // 3
+    this.count = '😀🏴󠁧󠁢󠁷󠁬󠁳󠁿😇'.length; // 18
+  }
 }
