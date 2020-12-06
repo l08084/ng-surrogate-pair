@@ -3,16 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SurrogatePairMaxLengthDirective } from './surrogate-pair-max-length.directive';
-import { SurrogatePairMinLengthDirective } from './surrogate-pair-min-length.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SurrogatePairMaxLengthDirective,
-    SurrogatePairMinLengthDirective
+    SurrogatePairMaxLengthDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
