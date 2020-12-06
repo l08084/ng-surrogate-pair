@@ -31,7 +31,7 @@ export class SurrogatePairMaxLengthDirective {
   @HostListener('input', ['$event'])
   public onChange(event: any): void {
     if (length(event.target.value) > this.appSurrogatePairMaxLength) {
-      this.renderer.setAttribute(
+      this.renderer.setProperty(
         this.el.nativeElement,
         'value',
         substring(event.target.value, 0, this.appSurrogatePairMaxLength)
